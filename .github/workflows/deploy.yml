@@ -24,6 +24,8 @@ jobs:
           submodules: recursive
       - name: Run Docker Compose
         run: |
+              ls
+              pwd
               HISPANO_STATION_14_API_TOKEN=`tr -dc A-Za-z0-9 </dev/urandom | head -c 16 ; echo ''`
               sed -i 's/${HISPANO_STATION_14_API_TOKEN}/'$HISPANO_STATION_14_API_TOKEN'/g' ./appsettings.yml
               docker-compose up
