@@ -8,4 +8,4 @@ services:
     volumes:
       - ./configuration/appsettings.yml:/app/appsettings.yml 
       - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
-      - ./data/instances:/app/instances
+      - /hispanostation14/data/instances:/app/instances
