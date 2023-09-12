@@ -1,0 +1,28 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
+name: Deploy
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  push_to_registry:
+    name: Deploy server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+        run: |
+              HISPANO_STATION_14_API_TOKEN=`tr -dc A-Za-z0-9 </dev/urandom | head -c 16 ; echo ''` 
+              && sed -i 's/${HISPANO_STATION_14_API_TOKEN}/'$HISPANO_STATION_14_API_TOKEN'/g' ./appsettings.yml
+              && docker-compose up
