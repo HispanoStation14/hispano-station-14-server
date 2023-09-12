@@ -36,3 +36,4 @@ Servers:
       UpdateType: "Manifest"
       Updates:
         ManifestUrl: "https://central.spacestation14.io/builds/wizards/manifest.json"
+      TimeoutSeconds: 120
