@@ -35,7 +35,6 @@ enabled = true
 hostname = "HispanoStation14"
 role_timers = false
 map = "Omega"
-defaultpreset = "extended"
 
 [console]
 # If this is true, people connecting from this machine (loopback)
