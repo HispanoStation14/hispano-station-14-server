@@ -32,6 +32,8 @@ jobs:
           DISCORD_ROUND_UPDATE_WEBHOOK: ${{ secrets.DISCORD_ROUND_UPDATE_WEBHOOK }}
           DISCORD_AHELP_WEBHOOK: ${{ secrets.DISCORD_AHELP_WEBHOOK }}
       - name: Run Docker Compose
-        run: docker compose up -d
+        run: |
+              docker compose down
+              docker compose up -d
               
         
