@@ -103,3 +103,7 @@ mode = 1
 # (the auth server being the one which manages Space Station 14 accounts), you change it here.
 # server = https://central.spacestation14.io/auth/
 
+[discord]
+round_update_webhook = "${DISCORD_ROUND_UPDATE_WEBHOOK}"
+ahelp_webhook = "${DISCORD_AHELP_WEBHOOK}"
+

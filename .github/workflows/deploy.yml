@@ -22,9 +22,16 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: recursive
-      - name: Run Docker Compose
+      - name: Replace variables
         run: |
               HISPANO_STATION_14_API_TOKEN=`tr -dc A-Za-z0-9 </dev/urandom | head -c 16 ; echo ''`
               sed -i 's/${HISPANO_STATION_14_API_TOKEN}/'$HISPANO_STATION_14_API_TOKEN'/g' ./configuration/appsettings.yml
-              docker compose up -d
+              sed -i 's/${DISCORD_ROUND_UPDATE_WEBHOOK}/'$DISCORD_ROUND_UPDATE_WEBHOOK'/g' ./configuration/hispano_station14/config.toml
+              sed -i 's/${DISCORD_AHELP_WEBHOOK}/'$DISCORD_AHELP_WEBHOOK'/g' ./configuration/hispano_station14/config.toml\
+        env:
+          DISCORD_ROUND_UPDATE_WEBHOOK: ${{ secrets.DISCORD_ROUND_UPDATE_WEBHOOK }}
+          DISCORD_AHELP_WEBHOOK: ${{ secrets.DISCORD_AHELP_WEBHOOK }}
+      - name: Run Docker Compose
+        run: docker compose up -d
+              
         
