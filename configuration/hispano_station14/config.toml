@@ -110,3 +110,6 @@ ahelp_webhook = "${DISCORD_AHELP_WEBHOOK}"
 [shuttle]
 arrivals_returns = true
 
+[replay]
+auto_record = true
+
