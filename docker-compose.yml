@@ -1,0 +1,11 @@
+services:
+  watchdog:
+    image: hispanostation14/watchdog
+    ports:
+      - 5000:5000
+      - 1212:1212
+      - 1212:1212/udp
+    volumes:
+      - ./configuration/appsettings.yml:/app/appsettings.yml 
+      - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
+      - /hispanostation14/data/instances:/app/instances
