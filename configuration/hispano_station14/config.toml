@@ -113,3 +113,8 @@ arrivals_returns = true
 [replay]
 auto_record = true
 
+[vote]
+enabled = true
+restart_enabled = true
+preset_enabled = false
+map_enabled = false
