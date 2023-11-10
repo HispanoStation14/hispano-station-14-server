@@ -34,7 +34,7 @@ enabled = true
 [game]
 hostname = "HispanoStation14"
 role_timers = false
-map = "Saltern"
+map = "Cluster"
 
 [console]
 # If this is true, people connecting from this machine (loopback)
