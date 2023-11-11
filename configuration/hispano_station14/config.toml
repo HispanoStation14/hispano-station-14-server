@@ -46,14 +46,14 @@ login_host_user = "Rankstrail"
 [hub]
 # Set to true to show this server on the public server list
 # Before enabling this, read: https://docs.spacestation14.io/hosts/hub-rules
-advertise = false
+advertise = true
 # Comma-separated list of tags, useful for categorizing your server.
 # See https://docs.spacestation14.io/hosts/hub-rules for more details on this when it becomes relevant.
-tags = ""
+tags = "lang:es,region:eu_w"
 # URL of your server. Fill this in if you have a domain name,
 # want to use HTTPS (with a reverse proxy), or other advanced scenarios.
 # Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
-server_url = ""
+# server_url = ""
 # Comma-separated list of URLs of hub servers to advertise to.
 hub_urls = "https://central.spacestation14.io/hub/"
 
