@@ -35,7 +35,7 @@ enabled = true
 hostname = "[ES] HispanoStation14: Rol hispano en SS14"
 role_timers = false
 map = "Atlas"
-desc = "¡Entra al servidor de rol hispanohablante en SS14! Ambiente agradable para nuevos jugadores y veteranos de SS13"
+desc = "¡Entra al servidor de rol hispanohablante en SS14! Ambiente agradable para nuevos jugadores y veteranos de SS13. (SPANISH LANGUAGE and MRP)"
 
 [console]
 # If this is true, people connecting from this machine (loopback)
