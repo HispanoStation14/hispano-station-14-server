@@ -34,7 +34,7 @@ enabled = true
 [game]
 hostname = "[ES] HispanoStation14: Rol hispano en SS14"
 role_timers = false
-map = "Cluster"
+map = "Atlas"
 desc = "¡Entra al servidor de rol hispanohablante en SS14! Ambiente agradable para nuevos jugadores y veteranos de SS13"
 
 [console]
@@ -50,7 +50,7 @@ login_host_user = "Rankstrail"
 advertise = true
 # Comma-separated list of tags, useful for categorizing your server.
 # See https://docs.spacestation14.io/hosts/hub-rules for more details on this when it becomes relevant.
-tags = "lang:es,region:eu_w"
+tags = "lang:es,region:eu_w,rp:med"
 # URL of your server. Fill this in if you have a domain name,
 # want to use HTTPS (with a reverse proxy), or other advanced scenarios.
 # Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
