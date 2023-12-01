@@ -40,7 +40,7 @@ Servers:
       # See below for alternatives.
       UpdateType: "Git"
       Updates:
-        BaseUrl: "https://github.com/Nyanotrasen/Nyanotrasen"
+        BaseUrl: "https://github.com/DeltaV-Station/Delta-v"
         Branch: "master"
         HybridACZ: true
       # UpdateType: "Manifest"
