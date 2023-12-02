@@ -15,5 +15,3 @@ services:
     environment:
       DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
       SERVER_STATUS_ENDPOINT: http://watchdog:1212/status
-    secrets:
-      - discord_bot_token
