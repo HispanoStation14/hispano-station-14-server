@@ -10,13 +10,10 @@ services:
       - ./configuration/appsettings.yml:/app/appsettings.yml 
       - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
       - /hispanostation14/data/instances:/app/instances
-#   status_discord_bot:
-#     image: hispanostation14/ss14-status-discord-bot
-#     environment:
-#       DISCORD_BOT_TOKEN_FILE: /run/secrets/discord_bot_token
-#       SERVER_STATUS_ENDPOINT: http://watchdog:1212/status
-#     secrets:
-#       - discord_bot_token
-# secrets:
-#   discord_bot_token:
-#     environment: "DISCORD_BOT_TOKEN"
+  status_discord_bot:
+    image: hispanostation14/ss14-status-discord-bot
+    environment:
+      DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
+      SERVER_STATUS_ENDPOINT: http://watchdog:1212/status
+    secrets:
+      - discord_bot_token

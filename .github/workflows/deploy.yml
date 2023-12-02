@@ -28,14 +28,14 @@ jobs:
               sed -i 's@${HISPANO_STATION_14_API_TOKEN}@'"$HISPANO_STATION_14_API_TOKEN"'@' ./configuration/appsettings.yml
               sed -i 's@${DISCORD_ROUND_UPDATE_WEBHOOK}@'"$DISCORD_ROUND_UPDATE_WEBHOOK"'@' ./configuration/hispano_station14/config.toml
               sed -i 's@${DISCORD_AHELP_WEBHOOK}@'"$DISCORD_AHELP_WEBHOOK"'@' ./configuration/hispano_station14/config.toml
+              sed -i 's@${DISCORD_BOT_TOKEN}@'"$DISCORD_BOT_TOKEN"'@' ./docker-compose.yaml
         env:
           DISCORD_ROUND_UPDATE_WEBHOOK: ${{ secrets.DISCORD_ROUND_UPDATE_WEBHOOK }}
           DISCORD_AHELP_WEBHOOK: ${{ secrets.DISCORD_AHELP_WEBHOOK }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
       - name: Run Docker Compose
         run: |
               docker compose down
               docker compose up -d
-        env:
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
               
         
