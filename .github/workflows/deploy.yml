@@ -35,7 +35,6 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
       - name: Run Docker Compose
         run: |
-              docker compose pull
-              docker compose up -d
+              docker compose up --force-recreate --pull always
               
         
