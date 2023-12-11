@@ -35,8 +35,8 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
       - name: Run Docker Compose
         run: |
-              docker compose down
               docker compose pull
+              docker compose down
               docker compose up
               
         
