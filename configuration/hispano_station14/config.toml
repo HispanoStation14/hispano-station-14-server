@@ -119,3 +119,8 @@ enabled = true
 restart_enabled = true
 preset_enabled = false
 map_enabled = false
+
+[[links]]
+name = "Discord"
+icon = "discord"
+url = "https://disboard.org/server/1142067069542740068"
