@@ -56,7 +56,7 @@ Servers:
       Updates:
         BaseUrl: "https://github.com/new-frontiers-14/frontier-station-14"
         Branch: "master"
-        HybridACZ: false
+        HybridACZ: true
       TimeoutSeconds: 120
     hispano_station14_nyanotrasen: # ID of your server.
       Name: "HispanoStation 14 Nyanotrasen" # Name of the server - Note that this is NOT the name of the server on the hub, that is set for each server under game.hostname in their respective config.toml files.
@@ -74,5 +74,5 @@ Servers:
       Updates:
         BaseUrl: "https://github.com/Nyanotrasen/Nyanotrasen"
         Branch: "master"
-        HybridACZ: false
+        HybridACZ: true
       TimeoutSeconds: 120
