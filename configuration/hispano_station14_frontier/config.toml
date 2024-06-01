@@ -32,7 +32,7 @@ enabled = true
 # connectaddress = "udp://localhost:1213"
 
 [game]
-hostname = "[ES] HispanoStation14: Frontier"
+hostname = "[ES] HispanoStation14: Frontera"
 role_timers = false
 map = "Frontier"
 desc = "¡Entra al servidor de rol hispanohablante en SS14! Para saber más: únete a nuestro Discord"

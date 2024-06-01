@@ -36,14 +36,9 @@ Servers:
         DOTNET_TC_QuickJitForLoops: 1
         DOTNET_ReadyToRun: 0
 
-      # UpdateType: "Manifest"
-      # Updates:
-      #   ManifestUrl: "https://central.spacestation14.io/builds/wizards/manifest.json"
-      UpdateType: "Git"
+      UpdateType: "Manifest"
       Updates:
-        BaseUrl: "https://github.com/DeltaV-Station/Delta-v"
-        Branch: "master"
-        HybridACZ: true
+        ManifestUrl: "https://central.spacestation14.io/builds/wizards/manifest.json"
       TimeoutSeconds: 120
     hispano_station14_frontier: # ID of your server.
       Name: "HispanoStation 14 Frontier" # Name of the server - Note that this is NOT the name of the server on the hub, that is set for each server under game.hostname in their respective config.toml files.
