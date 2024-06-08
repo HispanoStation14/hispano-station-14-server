@@ -8,6 +8,8 @@ services:
       - 1212:1212/udp
       - 1213:1213
       - 1213:1213/udp
+      - 1214:1214
+      - 1214:1214/udp
     volumes:
       - ./configuration/appsettings.yml:/app/appsettings.yml
       - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
