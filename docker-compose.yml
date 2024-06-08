@@ -6,9 +6,12 @@ services:
       - 5000:5000
       - 1212:1212
       - 1212:1212/udp
+      - 1213:1213
+      - 1213:1213/udp
     volumes:
-      - ./configuration/appsettings.yml:/app/appsettings.yml 
+      - ./configuration/appsettings.yml:/app/appsettings.yml
       - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
+      - ./configuration/hispano_station14_frontier/config.toml:/app/instances/hispano_station14_frontier/config.toml
       - /hispanostation14/data/instances:/app/instances
   status_discord_bot:
     image: hispanostation14/ss14-status-discord-bot
