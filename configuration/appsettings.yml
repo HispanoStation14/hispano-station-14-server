@@ -73,6 +73,6 @@ Servers:
       UpdateType: "Git"
       Updates:
         BaseUrl: "https://github.com/Simple-Station/Parkstation-Friendly-Chainsaw"
-        Branch: "parkstation"
+        Branch: "master"
         HybridACZ: true
       TimeoutSeconds: 120
