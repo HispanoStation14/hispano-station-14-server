@@ -20,7 +20,7 @@ Serilog:
   #  Name: "Test"
 
 # Important if using Git update method
-BaseUrl: "http://localhost:5000/"
+BaseUrl: "http://0.0.0.0:5000/"
 
 AllowedHosts: "*"
 
@@ -72,7 +72,7 @@ Servers:
       # See below for alternatives.
       UpdateType: "Git"
       Updates:
-        BaseUrl: "https://github.com/Simple-Station/Parkstation-Friendly-Chainsaw"
+        BaseUrl: "https://github.com/Simple-Station/Parkstation"
         Branch: "master"
         HybridACZ: true
       TimeoutSeconds: 120
