@@ -58,8 +58,8 @@ Servers:
     #     Branch: "master"
     #     HybridACZ: true
     #   TimeoutSeconds: 120
-    hispano_station14_parkstation:
-      Name: "HispanoStation 14 Parkstation"
+    hispano_station14_colonial_marines:
+      Name: "HispanoStation 14 Colonial Marines"
       ApiToken: "${HISPANO_STATION_14_API_TOKEN}"
       ApiPort: 1212
 
@@ -72,7 +72,7 @@ Servers:
       # See below for alternatives.
       UpdateType: "Git"
       Updates:
-        BaseUrl: "https://github.com/Simple-Station/Parkstation"
+        BaseUrl: "https://github.com/CM-14/CM-14"
         Branch: "master"
         HybridACZ: true
       TimeoutSeconds: 120
