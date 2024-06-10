@@ -12,7 +12,6 @@ enabled = false
 tickrate = 60
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 50
 # Automatic port forwarding!
 # Disabled by default because you may not want to do this.
 # upnp = true
@@ -56,7 +55,7 @@ tags = "lang:es,region:am_n_e,rp:med"
 # Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
 # server_url = ""
 # Comma-separated list of URLs of hub servers to advertise to.
-hub_urls = "https://central.spacestation14.io/hub/"
+hub_urls = "https://hub.spacestation14.com/"
 
 [build]
 # *Absolutely all of these can be supplied using a "build.json" file*
@@ -102,7 +101,7 @@ mode = 1
 
 # You should probably never EVER need to touch this, but if you need a custom auth server,
 # (the auth server being the one which manages Space Station 14 accounts), you change it here.
-# server = https://central.spacestation14.io/auth/
+server = "https://auth.spacestation14.com/"
 
 [discord]
 round_update_webhook = "${DISCORD_ROUND_UPDATE_WEBHOOK}"
