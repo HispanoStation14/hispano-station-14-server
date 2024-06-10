@@ -12,7 +12,7 @@ enabled = false
 tickrate = 60
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 30
+max_connections = 50
 # Automatic port forwarding!
 # Disabled by default because you may not want to do this.
 # upnp = true
