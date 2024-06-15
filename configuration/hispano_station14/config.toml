@@ -12,6 +12,7 @@ enabled = false
 tickrate = 60
 port = 1212
 bindto = "::,0.0.0.0"
+max_connections = 50
 # Automatic port forwarding!
 # Disabled by default because you may not want to do this.
 # upnp = true
@@ -35,6 +36,7 @@ hostname = "[ES] HispanoStation14: Estación"
 role_timers = false
 map = "Saltern"
 desc = "¡Entra al servidor de rol hispanohablante en SS14! Para saber más: únete a nuestro Discord"
+max_players = 50
 
 [console]
 # If this is true, people connecting from this machine (loopback)
