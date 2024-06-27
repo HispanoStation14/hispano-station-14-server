@@ -1,21 +1,22 @@
 version: "3.8"
 services:
-    watchdog:
-        image: hispanostation14/watchdog
-        ports:
-            - 5000:5000
-            - 1212:1212
-            - 1212:1212/udp
-            - 1213:1213
-            - 1213:1213/udp
-        volumes:
-            - ./configuration/appsettings.yml:/app/appsettings.yml
-            - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
-            - ./configuration/hispano_station14_deep/config.toml:/app/instances/hispano_station14_deep/config.toml
-            - ./configuration/hispano_station14_frontier/config.toml:/app/instances/hispano_station14_frontier/config.toml
-            - /hispanostation14/data/instances:/app/instances
-    status_discord_bot:
-        image: hispanostation14/ss14-status-discord-bot
-        environment:
-            DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
-            SERVER_STATUS_ENDPOINT: http://watchdog:1212/status
+  watchdog:
+    image: hispanostation14/watchdog
+    ports:
+      - 5000:5000
+      - 1212:1212
+      - 1212:1212/udp
+      - 1213:1213
+      - 1213:1213/udp
+    volumes:
+      - ./configuration/appsettings.yml:/app/appsettings.yml
+      - ./configuration/hispano_station14/config.toml:/app/instances/hispano_station14/config.toml
+      - ./configuration/hispano_station14_deep/config.toml:/app/instances/hispano_station14_deep/config.toml
+      - ./configuration/hispano_station14_frontier/config.toml:/app/instances/hispano_station14_frontier/config.toml
+      - ./configuration/hispano_station14_crystal/config.toml:/app/instances/hispano_station14_crystal/config.toml
+      - /hispanostation14/data/instances:/app/instances
+  status_discord_bot:
+    image: hispanostation14/ss14-status-discord-bot
+    environment:
+      DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
+      SERVER_STATUS_ENDPOINT: http://watchdog:1212/status
