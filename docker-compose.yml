@@ -14,6 +14,7 @@ services:
       - ./configuration/hispano_station14_deep/config.toml:/app/instances/hispano_station14_deep/config.toml
       - ./configuration/hispano_station14_frontier/config.toml:/app/instances/hispano_station14_frontier/config.toml
       - ./configuration/hispano_station14_crystal/config.toml:/app/instances/hispano_station14_crystal/config.toml
+      - ./configuration/hispano_station14_nuclear/config.toml:/app/instances/hispano_station14_nuclear/config.toml
       - /hispanostation14/data/instances:/app/instances
   status_discord_bot:
     image: hispanostation14/ss14-status-discord-bot
