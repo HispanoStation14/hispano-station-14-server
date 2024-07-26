@@ -36,6 +36,7 @@ hostname = "[ES] Estación Carpa (HispanoStation14)"
 role_timers = false
 map = "Saltern"
 desc = "¡Entra al servidor de rol hispanohablante en SS14! Para saber más: únete a nuestro Discord"
+soft_max_players = 50
 max_players = 50
 
 [console]
