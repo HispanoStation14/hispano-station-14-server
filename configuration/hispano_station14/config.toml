@@ -34,7 +34,7 @@ enabled = true
 [game]
 hostname = "[ES] Estación Carpa: Rol hispano"
 role_timers = false
-map = "Cluster"
+map = "Omega"
 desc = "¡Entra al servidor de rol hispanohablante en SS14! Para saber más: únete a nuestro Discord"
 soft_max_players = 50
 max_players = 50
